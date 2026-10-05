@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Importando fontes elegantes para o cronômetro -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos 6 Meses — Giovanna & Luiz</title>
+    <!-- Link para nosso arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte elegante do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MÚSICA DE FUNDO -->
+    <audio id="musica" loop src="midias/musica.mp3"></audio>
+
+    <!-- 1. INTRODUÇÃO -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="subtitulo">06 Meses de Nós</span>
+            <h1>Giovanna</h1>
+            <p class="frase-abertura">"Minha felicidade..."</p>
+            
+            <!-- Botão para ligar a música -->
+            <button id="btn-musica" onclick="toggleMusica()">🎵 Ouvir Trilha Sonora</button>
+
+            <!-- CONTADOR DE TEMPO JUNTOS -->
+            <div class="contador-container">
+                <p> 6 meses de nós:</p>
+                <div id="contador-container">
+                    <div><span id="dias"> 0 </span> <label> Dias </label></div>
+                    <div><span id="horas"> 0 </span> <label> Horas </label></div>
+                    <div><span id="minutos"> 0 </span> <label> Min </label></div>
+                    <div><span id="segundos"> 0 </span> <label> Seg </label></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. DESENVOLVIMENTO: A NOSSA HISTÓRIA -->
+    <main class="container">
+
+        <!-- O PRIMEIRO OLHAR -->
+        <section class="historia-card">
+            <h2>01. O Primeiro Olhar</h2>
+            <p class="data-marcativa">A PRIMEIRA VEZ QUE TE VI</p>
+            <div class="texto-historia">
+                <p>A primeira vez que eu te vi... Eu não sabia, mas estava diante da pessoa que mudaria a minha vida.</p>
+                <p>Naquele momento, eu não sabia seu nome, não conhecia sua história, não conhecia seus sonhos, seus medos, suas manias ou esse jeito que hoje eu amo tanto. Eu só tinha diante de mim uma menina que, de alguma forma, fez meu coração prestar atenção.</p>
+                <p>E é engraçado pensar nisso hoje... porque, olhando para trás, parece que alguma coisa dentro de mim já sabia.</p>
+                <p>Eu não sabia que aquele olhar seria o começo da nossa história. Não sabia que, algum tempo depois, eu estaria chamando você de amor da minha vida. Não sabia que seu abraço se tornaria um dos lugares onde eu mais gosto de estar, nem que seu sorriso seria capaz de mudar completamente o meu dia.</p>
+                <p>Eu simplesmente te vi.</p>
+                <p>E, sem perceber, comecei a encontrar em você tudo aquilo que eu nem sabia que estava procurando.</p>
+                <p>Talvez naquele primeiro instante eu ainda não soubesse que era você. Mas hoje, olhando para tudo o que vivemos desde então, eu tenho certeza de uma coisa:</p>
+                <p>Eu gostaria de voltar naquele momento só para olhar para você mais uma vez... e dizer para aquele Luiz que estava te conhecendo:</p>
+                <p><em>"Cuida dela. Porque essa menina ainda vai ser o amor da sua vida."</em></p>
+            </div>
+        </section>
+
+        <!-- O PRIMEIRO ENCONTRO -->
+        <section class="historia-card">
+            <h2>02. O Primeiro Encontro</h2>
+            <p class="data-marcativa">O INÍCIO DE TUDO</p>
+            <div class="texto-historia">
+                <p>Me lembro como se fosse ontem. Dia 14/03, o dia em que eu tive a certeza de que tinha encontrado o amor da minha vida.</p>
+                <p>É engraçado pensar que, por um descuido meu, por não ter feito a reserva no restaurante que eu tinha marcado com você e ter precisado mudar de última hora para o Outback, aquela noite acabou se tornando uma das melhores noites da minha vida.</p>
+                <p>Mas talvez tenha sido justamente isso que fez tudo ser tão especial.</p>
+                <p>Porque quando é a pessoa certa, não importa o lugar. Pode ser no restaurante mais bonito, em um parque, em uma viagem ou simplesmente sentados em um sofá, em silêncio, aproveitando a companhia um do outro. Quando é a pessoa certa, a presença dela já é suficiente.</p>
+                <p>E foi exatamente isso que eu senti naquela noite.</p>
+                <p>Eu lembro de estar ali com você e sentir uma paz que eu não sabia explicar. Ao mesmo tempo em que tudo parecia tão novo, havia uma sensação estranha de familiaridade, como se eu já conhecesse aquele lugar onde estava: ao seu lado.</p>
+                <p>Naquele dia, eu não sabia como seria o nosso futuro. Não sabia de todos os momentos que ainda viveríamos, dos abraços, dos beijos, das risadas, dos planos, dos sonhos e de todas as memórias que ainda iríamos construir.</p>
+                <p>Eu só sabia que não queria que aquela noite acabasse.</p>
+                <p>Porque naquela noite, a pessoa que eu tanto procurei me encontrou.</p>
+                <p>E, desde então, eu nunca mais precisie procurar.</p>
+            </div>
+        </section>
+
+        <!-- MURAL DE MEMÓRIAS -->
+        <section class="galeria-secao">
+            <h2>03. Nossas Memórias & Querências</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">10/05/2026</div>
+                    <div class="card-midia">
+                        <img src="midias/foto12.jpg" alt="O Sorriso da minha felicidade">
+                        <div class="card-body">
+                            <h3>O Sorriso da minha felicidade</h3>
+                            <p>A dona da minha vida e do sorriso que preenche meus pensamentos e transforma um dia comum em um dia maravilhoso. Essa foto representa um pouco do que você é para mim: luz, alegria e amor. E assim como essas flores, você deixa tudo ao seu redor mais bonito simplesmente por estar presente.</p>
+                            <p>Meu amor, que sorte a minha ter encontrado você e poder chamar de minha a pessoa que faz meu coração sorrir todos os dias. ❤️</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">09/08/2026</div>
+                    <div class="card-midia">
+                        <video controls src="midias/video.mp4"></video>
+                        <div class="card-body">
+                            <h3>Oh céus, ela é tão bela</h3>
+                            <p>Os olhos que eu poderia admirar por horas e ainda sentir que foi um pouco. Talvez você nem perceba, mas toda vez que olho para eles, encontro um pedacinho da paz que sempre procurei. ❤️</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. CONCLUSÃO -->
+        <section class="historia-card conclusao">
+            <h2>04. E para o nosso Futuro...</h2>
+            <div class="texto-historia">
+                <p>Meu amor,</p>
+                <p>Tudo o que eu mais desejo para os próximos meses e anos é continuar vivendo a nossa história ao seu lado. Quero estar presente em cada conquista, em cada sonho, em cada fase e em cada pequeno momento que a vida nos permite viver juntos.</p>
+                <p>Quero continuar descobrindo você, admirando seus olhos, cuidando do seu coração e construindo, pouco a pouco, a vida que tantas vezes sonhamos.</p>
+                <p>Que nunca nos falte amor, cumplicidade, carinho e vontade de escolher um ao outro todos os dias.</p>
+                <p>Porque, se hoje eu já estou tão feliz por ter encontrado você, mal posso esperar para descobrir tudo o que ainda vamos viver.</p>
+                <p>Eu te amo, Giovanna. Hoje, amanhã e em todos os nossos próximos capítulos. ❤️</p>
+            </div>
+            <div class="assinatura">
+                <p>Com todo meu amor,</p>
+                <span>Luiz Fernando</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Feito com todo carinho do mundo para a Giovanna ❤️</p>
+    </footer>
+
+    <!-- Link para nosso arquivo de scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

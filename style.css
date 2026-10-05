@@ -1,0 +1,268 @@
+/* PALETA DE CORES EM TONS DE BEGE E CASTANHO */
+:root {
+    --bg-principal: #fdfbf7;      /* Bege bem claro / Marfim */
+    --card-bg: #ffffff;           /* Branco elegante para os cartões */
+    --texto-escuro: #3d2b1f;      /* Castanho escuro / Marrom café para os textos */
+    --marrom-suave: #6e5241;      /* Castanho médio para datas e subtítulos */
+    --bege-destaque: #e8ded2;     /* Bege neutro para bordas e fundos secundários */
+    --destaque-quente: #a3623b;   /* Terracota/Castanho acolhedor para botões e detalhes */
+    --sombra-suave: 0 10px 30px rgba(61, 43, 31, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-escuro);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+}
+
+/* FONTES DOS TÍTULOS */
+h1, h2, h3, .subtitulo {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* 1. INTRODUÇÃO (HERO) */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #2b1c14 0%, #4a3427 100%);
+    color: #fdfbf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero .subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.1rem;
+    color: #e8ded2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+.hero .frase-abertura {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #d6c5b3;
+    margin-bottom: 2rem;
+}
+
+/* BOTÃO DE MÚSICA */
+#btn-musica {
+    background-color: var(--destaque-quente);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#btn-musica:hover {
+    background-color: #8a502e;
+    transform: translateY(-2px);
+}
+
+/* CONTADOR DE TEMPO */
+.contador-container {
+    margin-top: 3rem;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contador-container p {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #e8ded2;
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#contador div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contador span, .tempo span {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #e63946;
+    letter-spacing: 1px;
+    margin-right: 4px;
+}
+
+#contador label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c9b5a1;
+}
+
+/* 2. CONTEÚDO PRINCIPAL */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+/* CARDS DE HISTÓRIA */
+.historia-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--sombra-suave);
+    border: 1px solid var(--bege-destaque);
+}
+
+.historia-card h2 {
+    font-size: 2.2rem;
+    color: var(--texto-escuro);
+    margin-bottom: 0.2rem;
+}
+
+.data-marcativa {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--marrom-suave);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.texto-historia p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    color: #4a3c31;
+}
+
+.texto-historia em {
+    color: var(--destaque-quente);
+    font-weight: 500;
+}
+
+/* GALERIA & TIMELINE */
+.galeria-secao {
+    margin: 4rem 0;
+}
+
+.galeria-secao h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+}
+
+.timeline-date {
+    display: inline-block;
+    background-color: var(--bege-destaque);
+    color: var(--texto-escuro);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.card-midia {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    border: 1px solid var(--bege-destaque);
+}
+
+.card-midia img, .card-midia video { 
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+}
+/* Ajuste para o vídeo não cortar e ficar responsivo */
+video {
+    width: 100%;          /* Ocupa a largura do container */
+    max-width: 600px;     /* Define um limite bonito para telas grandes */
+    height: auto;         /* Mantém a proporção original do vídeo */
+    object-fit: contain;  /* Garante que o vídeo inteiro apareça sem cortes */
+    border-radius: 12px;  /* Bordas arredondadas (opcional) */
+    display: block;
+    margin: 0 auto;       /* Centraliza o vídeo na tela */
+}
+.card-body {
+    padding: 1.8rem;
+}
+
+.card-body h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: var(--texto-escuro);
+}
+
+/* CONCLUSÃO & ASSINATURA */
+.conclusao {
+    background: linear-gradient(to bottom, #ffffff, #f7f0e8);
+}
+
+.assinatura {
+    margin-top: 2rem;
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.assinatura p {
+    font-style: italic;
+    color: var(--marrom-suave);
+}
+
+.assinatura span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--texto-escuro);
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--marrom-suave);
+    background-color: #f2e9e1;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 600px) {
+    .hero h1 { font-size: 3rem; }
+    #contador { gap: 0.8rem; }
+    #contador span { font-size: 1.8rem; }
+    .historia-card { padding: 1.5rem; }
+}
